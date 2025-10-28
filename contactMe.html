@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-emerald-50">
+
+  <!-- isi contact me -->
+  <section id="contact" class="flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-2xl text-center">
+      
+      <!-- Title -->
+      <h1 class="text-3xl font-bold mb-2">
+        <span class="border-b-4 border-orange-500">CONTACT</span>
+        <span class="border-b-4 border-orange-500"> ME</span>
+      </h1>
+      <p class="text-emerald-50 mb-6">HUBUNGI KAMI JIKA INGIN BEKERJA SAMA</p>
+
+      <!-- Form Box -->
+      <div class="bg-amber-600 rounded-xl p-8 shadow-lg">
+        <form action="#" method="POST" class="space-y-4">
+          
+          <!-- Name & Email -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col text-left">
+              <label for="name" class="mb-1 text-sm font-semibold">NAME</label>
+              <input type="text" id="name" name="name" 
+                class="w-full px-3 py-2 rounded-md bg-white  text-white focus:outline-none focus:ring-2 focus:ring-orange-500">
+            </div>
+            <div class="flex flex-col text-left">
+              <label for="email" class="mb-1 text-sm font-semibold">EMAIL</label>
+              <input type="email" id="email" name="email" 
+                class="w-full px-3 py-2 rounded-md bg-white  text-white focus:outline-none focus:ring-2 focus:ring-orange-500">
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="flex flex-col text-left">
+            <label for="message" class="mb-1 text-sm font-semibold">MESSAGE</label>
+            <textarea id="message" name="message" rows="5" 
+              class="w-full px-3 py-2 rounded-md bg-white  text-white focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+          </div>
+
+          <!-- Button -->
+          <div class="text-left">
+            <button type="submit" 
+              class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded-lg shadow-md transition">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+  
+
+</body>
+</html>

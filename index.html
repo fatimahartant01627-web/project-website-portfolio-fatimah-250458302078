@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="/foto buat tailwind-muslimah.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <style>
+    .font-fatim {
+      font-family: "Libertinus Serif", serif;
+    }
+
+    .color-fatim {
+        color: #FFF8E8 ;
+    }
+
+  </style>
+  
+  <body>
+    <nav
+      class="sticky top-0 z-50 bg-[#DEE8CE]/50 backdrop-blur-2xl border-b-[#BB6653]"
+      aria-label="Primary"
+    >
+      <div class="max-w- px-4 sm:px-6 lg:px-8">
+        <!-- untuk menuu laptop -->
+        <div class="flex items-center justify-between h-16">
+          <!-- felx biar flexsoble
+                 uppercase biar cupslok
+                 tracking wider biar ada jarak di nama
+                 font bold biar hurufnya jdi tebal 
+                 justify alur arah horizontal-->
+          <a
+            href="#"
+            class="flex items-center text-[#BB6653] text-xl font-fatim uppercase tracking-wider font-bold"
+            >Futem</a
+          >
+          <button
+            id="hamburger"
+            class="md:hidden p-2 mt-5 rounded hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            aria-label="Toggle menu"
+          >
+            <svg
+              id="icon-open"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" 
+              />
+            </svg>
+            <svg
+              id="icon-close"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+                   
+          </button>
+
+
+          <!-- flex biar dia flexsible
+                   flex col,biar dia kebawah 
+                   flex row biar kesamping
+                    -->
+          <div
+            id="main-menu"
+            class="hidden md:flex md:items-center md:gap-2 justify-between"
+          >
+            <div
+              class="flex flex-col md:flex-row md:items-center md:gap-2 text-right me:text-left"
+            >
+              <a
+                href="#About Me"
+                class="px-3 py-2 text-shadow-blue-400 hover:text-orange-900 uppercase font-fatim font-bold"
+                >About Me</a
+              >
+              <!-- what i do -->
+              <a
+                href="#whatIDo"
+                class="px-3 py-2 text-shadow-blue-400 hover:text-orange-900 uppercase font-fatim font-bold"
+                >What I Do</a
+              >
+              <!-- portfolio -->
+              <a
+                href="#Portfolio"
+                class="px-3 py-2 text-shadow-blue-400 hover:text-orange-900 uppercase font-fatim font-bold"
+                >portfolio</a
+              >
+              <!-- skills -->
+              <a
+                href="#skills"
+                class="px-3 py-2 text-shadow-blue-400 hover:text-orange-900 uppercase font-fatim font-bold"
+                >Skills</a
+              >
+              <!-- blog -->
+              <a
+                href="#Blog"
+                class="px-3 py-2 text-shadow-blue-400 hover:text-orange-900 uppercase font-fatim font-bold"
+                >Blog</a
+              >
+              <a
+                href="/contactMe.html"
+              
+                class="bg-yellow-500 hover:bg-[#BB6653] rounded-xl px-4 py-2 font-fatim font-bold text-shadow-gray-600 justify-center"
+                >Contact Me</a
+              >
+            </div>
+          </div>
+
+          
+          <!-- menu untuk hp -->
+          <div
+            id="mobile-panel"
+            class="md:hidden hidden border-t border-slate-800 py-2"
+          >
+            <a
+              href="#aboutMe"
+              class="block px-3 py-2 text-shadow-blue-600 hover:text-blue-300 uppercase font-fatim"
+              >About Me</a
+            >
+            <a
+              href="#what i do"
+              class="block px-3 py-2 text-shadow-blue-600 hover:text-blue-300 uppercase font-fatim"
+              >What I Do</a
+            >
+            <a
+              href="#"
+              class="block px-3 py-2 text-shadow-blue-600 hover:text-blue-300 uppercase font-fatim"
+              >Portfolio</a
+            >
+            <a
+              href="#"
+              class="block px-3 py-2 text-shadow-blue-600 hover:text-blue-300 uppercase font-fatim"
+              >Skiils</a
+            >
+            <a
+              href="#"
+              class="block px-3 py-2 text-shadow-blue-600 hover:text-blue-300 uppercase font-fatim"
+              >Blog</a
+            >
+            
+            <a
+              href="#contact me"
+              class="block bg-blue-400 hover:bg-blue-500 rounded-xl px-4 py-2 font-fatim font-bold text-shadow-blue-200 justify-center items-center"
+              >Contact Me</a
+            >
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="contact me" class="bg-[#BB6653]">
+      <div >
+
+      </div>
+    </section>
+    </section>
+
+    <section id="About Me" class="bg-[#BB6653]">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-2 items-center"
+      >
+        <!-- order-2 biar dia ad jarak dan akan pindah jika dikasi kalimat
+          untuk urutan -->
+        <div
+          class="order-2 lg:order-2 ring-6 ring-[#FFF8E8] rounded-2xl shadow-2xl overflow-hidden"
+        >
+          <img src="foto asli 3.jpg" alt="foto asli 1"/>
+        </div>
+
+           <div class="order-1 lg:order-1">
+        <h1 class="font-fatim text-5xl font-bold leading-tight text-white">Hello, I'm <span class="color-fatim">FUTEM</span></h1>
+        <h2 class="font-fatim text-2xl font-semibold text-slate-100">Web / Mobile Diveloper</h2>
+        <p class=" font-extralight text-slate-200">Lorem Ipsum is simply dummy text of the printing and typesetting industry. standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled
+          </p>
+
+            <!-- kotak kcil -->
+             <div class="mt-6 flex flex-wrap items-center gap-4">
+              <a href="" class="inline-flex items-center justify-center rounded-lg bg-amber-400 text-amber-50 px-4 py-3">
+                <i class="fa-brands fa-linkedin"></i></a>
+              <a href="" class="inline-flex items-center justify-center rounded-lg bg-amber-400 text-amber-50 px-4 py-3">
+                <i class="fa-duotone fa-solid fa-circle-user"></i></a>
+              <a href="" class="inline-flex items-center justify-center rounded-lg bg-amber-400 text-amber-50 px-4 py-3">
+                <i class="fa-brands fa-square-instagram"></i></a>
+              <a href="" class="inline-flex items-center justify-center rounded-lg bg-amber-400 text-amber-50 px-4 py-3">
+                <i class="fa-brands fa-twitter"></i></a>
+            
+             </div>
+      </div>
+      </div>
+    </section>
+
+  <!-- what i do -->
+   <section id="whatIDo" class="bg-amber-600">
+
+    <div class="max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-amber-100">
+      <div class="mb-12 text-center"> 
+        <h2 class="text-3xl font-bold font-fatim  text-amber-50 underline underline-offset-8
+         decoration-cyan-400 decoration-4 uppercase tracking-widest">what i do</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="rounded-xl bg-amber-400/70 shadow p-6"> 
+          <div class="flex item-center gap-3 mb-3">
+            <div class="w-10 h-10 grid rounded-full bg-blue-500 text-amber-50 place-items-center">
+              <i class="fa-brands fa-figma"></i>
+            </div>
+            <h3 class="text-white font-orang font-bold text-lg tracking-wider">web design</h3>
+          </div>
+          <p class="text-slate-300 font-orang">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        
+
+        <div class="rounded-xl bg-amber-400/70 shadow p-6"> 
+          <div class="flex item-center gap-3 mb-3">
+            <div class="w-10 h-10 grid rounded-full bg-blue-500 text-amber-50 place-items-center">
+              <i class="fa-brands fa-phoenix-framework"></i>
+            </div>
+            <h3 class="text-white font-orang font-bold text-lg tracking-wider">web design</h3>
+          </div>
+          <p class="text-slate-300 font-orang">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+
+        <div class="rounded-xl bg-amber-400/70 shadow p-6"> 
+          <div class="flex item-center gap-3 mb-3">
+            <div class="w-10 h-10 grid rounded-full bg-blue-500 text-amber-50 place-items-center">
+              <i class="fa-brands fa-medium"></i>
+            </div>
+            <h3 class="text-white font-orang font-bold text-lg tracking-wider">web design</h3>
+          </div>
+          <p class="text-slate-300 font-orang">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+   </section>
+
+  <!-- portfolio -->
+   <section id="Portfolio" class="bg-amber-600">
+    
+  <div class="max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-amber-100">
+      <div class="mb-12 text-center"> 
+        <h2 class="text-3xl font-bold font-fatim  text-amber-50 underline underline-offset-8
+         decoration-cyan-400 decoration-4 uppercase tracking-widest">portfolio
+        </h2>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="rounded-xl bg-amber-400/70 p-6"> 
+    <a href="" class="flex item-center gap-3 mb-3">
+              <img src="/bungaWeb1.jpeg" alt="" class="rounded-2xl">
+
+            </a>
+            <h3 class="text-white font-orang font-bold text-lg text-center tracking-wider">web design</h3>
+          <p class="text-slate-300 font-orang text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+
+      <div class="rounded-xl bg-amber-400/70 shadow p-6"> 
+          <a href="" class="flex item-center gap-3 mb-3">
+            <img src="/buungaWebNew1.jpeg" alt="" class="rounded-2xl">
+          </a>
+          <h3 class="text-white font-orang text-center font-bold text-lg tracking-wider">web design</h3>
+          <p class="text-slate-300 text-cente font-orang">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+
+      <div class="rounded-xl bg-amber-400/70 shadow p-6"> 
+          <a href="" class="flex item-center gap-3 mb-3">
+            <img src="/BungaWebNew2.jpeg" alt="" class="rounded-2xl">
+          </a>
+          <h3 class="text-white font-orang text-center font-bold text-lg tracking-wider">web design</h3>
+          <p class="text-slate-300 text-center font-orang">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+   </div>
+    </a>
+    </section>
+
+
+   
+
+  <!-- My Skill Section -->
+  <section class="py-16 px-6 bg-amber-600 " id="skills">
+    <!-- Title -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold tracking-wide">
+        MY <span class="border-b-4 border-orange-500 pb-1">SKILL</span>
+      </h2>
+    </div>
+
+    <!-- Description -->
+    <div class="max-w-4xl mx-auto text-left mb-8">
+      <h3 class="text-xl font-semibold">Web Developer</h3>
+      <p class="text-gray-300">My Skills</p>
+    </div>
+
+    <!-- Skills Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+      
+      <!-- Illustrator -->
+      <div class="bg-black p-6 rounded-lg flex items-center justify-center">
+        <img src="/logo AI.png" alt="Adobe Illustrator" class="w-25 h-15">
+      </div>
+
+      <!-- Photoshop -->
+      <div class="bg-black p-6 rounded-lg flex items-center justify-center">
+        <img src="/logoPs.png" alt="Photoshop" class="w-15 h-12">
+      </div>
+
+      <!-- HTML5 -->
+      <div class="bg-black p-6 rounded-lg flex items-center justify-center">
+        <img src="/logoHTML5.png" alt="HTML5" class="w-12 h-12">
+      </div>
+
+      <!-- JavaScript -->
+      <div class="bg-black p-6 rounded-lg flex items-center justify-center">
+        <img src="/logoJavaScript.png" alt="JavaScript" class="w-12 h-12">
+      </div>
+
+      <!-- Adobe XD -->
+      <div class="bg-black p-6 rounded-lg flex items-center justify-center">
+        <img src="/logoAdobeXd.png" alt="Adobe XD" class="w-12 h-12">
+      </div>
+
+      <!-- Blender -->
+      <div class="bg-black p-6 rounded-lg flex items-center justify-center">
+        <img src="/logoBelender.png" alt="Blender" class="w-12 h-12">
+      </div>
+
+      <!-- Sketch -->
+      <div class="bg-black p-6 rounded-lg flex items-center justify-center">
+        <img src="/logoBerlian.png" alt="Sketch" class="w-12 h-12">
+      </div>
+
+      <!-- Figma -->
+      <div class="bg-black p-6 rounded-lg flex items-center justify-center">
+        <img src="/logoFigma.png" alt="Figma" class="w-12 h-12">
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
+
+    
+
+  <!-- Blog Section -->
+  <section class="py-16 px-6 bg-amber-600" id="Blog">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold tracking-wide">
+        MY <span class="border-b-4 border-orange-500 pb-1">BLOG</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      
+      <!-- Card 1 -->
+      <div class="bg-amber-400 p-6 rounded-lg shadow-md hover:shadow-amber-300">
+        <div class="flex items-start space-x-4">
+          <div class="text-center">
+            <p class="text-sm">Aug</p>
+            <p class="text-2xl font-bold">24</p>
+          </div>
+          <div>
+            <p class="text-orange-500 text-sm uppercase">Jane Doe</p>
+            <h3 class="text-xl font-semibold">Review Jasa Website</h3>
+            <p class="text-gray-300 mt-2">Jasanya bagus, good job dan cepat</p>
+            <a href="#" class="text-orange-500 mt-3 inline-block">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-amber-400 p-6 rounded-lg shadow-md">
+        <div class="flex items-start space-x-4">
+          <div class="text-center">
+            <p class="text-sm">Aug</p>
+            <p class="text-2xl font-bold">24</p>
+          </div>
+          <div>
+            <p class="text-orange-500 text-sm uppercase">Jane Doe</p>
+            <h3 class="text-xl font-semibold">Review Jasa Website</h3>
+            <p class="text-gray-300 mt-2">Jasanya bagus, good job dan cepat</p>
+            <a href="#" class="text-orange-500 mt-3 inline-block">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-amber-400 p-6 rounded-lg shadow-md">
+        <div class="flex items-start space-x-4">
+          <div class="text-center">
+            <p class="text-sm">Aug</p>
+            <p class="text-2xl font-bold">24</p>
+          </div>
+          <div>
+            <p class="text-orange-500 text-sm uppercase">Jane Doe</p>
+            <h3 class="text-xl font-semibold">Review Jasa Website</h3>
+            <p class="text-gray-300 mt-2">Jasanya bagus, good job dan cepat</p>
+            <a href="#" class="text-orange-500 mt-3 inline-block">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer Section -->
+  <section class="bg-amber-600 mt-16">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8">
+      
+      <!-- Contact Info -->
+      <div>
+        <h2 class="text-2xl font-bold mb-7">Contact Us</h2>
+        <p class="mb-2">    Lembang, Bandung</p>
+        <p class="mb-2">    +62 812 3456 7890</p>
+        <p class="mb-2">    email@FloristFutem.com</p>
+      </div>
+
+      <!-- Google Maps Embed -->
+      <div class="w-full h-64">
+        <iframe 
+          src="http://google.com/maps/dir//Lembang,+Kec.+Lembang,+Kabupaten+Bandung+Barat,+Jawa+Barat/@-6.
+          8075383,107.5400821,11.63z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2e68e103befbd76d:0x1bb5bfc79b0edef1!2m2!1d107.
+          6229532!2d-6.8145434?hl=id&entry=ttu&g_ep=EgoyMDI1MDgzMC4wIKXMDSoASAFQAw%3D%3D" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+
+
+
+
+
+    
+   
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+      AOS.init({
+        duration: reduceMotion ? 0 : 600,
+        once: true,
+      });
+
+      const btn = document.getElementById("hamburger");
+      const iconOpen = document.getElementById("icon-open");
+      const iconClose = document.getElementById("icon-close");
+      const menu = document.getElementById("main-menu");
+      const panel = document.getElementById("mobile-panel");
+
+      btn?.addEventListener("click", () => {
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!expanded));
+        iconOpen.classList.toggle("hidden");
+        iconClose.classList.toggle("hidden");
+        panel.classList.toggle("hidden");
+      });
+
+      panel?.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          btn.setAttribute("aria-expanded", "false");
+          iconOpen.classList.remove("hidden");
+          iconClose.classList.add("hidden");
+          panel.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
